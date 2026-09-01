@@ -8,8 +8,7 @@ Uso:
 Lê `submissao/entrega.json`, valida os campos e escreve
 `submissao/submissao_<TURMA>_<GRUPO>.pdf`.
 
-O PDF contém apenas os três links exigidos, mais a identificação do grupo.
-Não altere o layout: o formato padronizado é o que permite a correção em lote.
+O PDF contém os links da entrega, mais a identificação do grupo.
 """
 
 from __future__ import annotations
@@ -80,7 +79,6 @@ def validar(dados: dict) -> list[str]:
     links = dados.get("links") or {}
     rotulos = {
         "repositorio": "link do repositório",
-        "video": "link do vídeo",
         "apresentacao": "link da apresentação",
     }
     for chave, rotulo in rotulos.items():
@@ -166,8 +164,6 @@ def construir_pdf(dados: dict, destino: Path) -> None:
     linhas = [
         [Paragraph("Repositório", st_rotulo),
          Paragraph(f'<link href="{links["repositorio"]}" color="#0B3C5D">{links["repositorio"]}</link>', st_link)],
-        [Paragraph("Vídeo", st_rotulo),
-         Paragraph(f'<link href="{links["video"]}" color="#0B3C5D">{links["video"]}</link>', st_link)],
         [Paragraph("Apresentação", st_rotulo),
          Paragraph(f'<link href="{links["apresentacao"]}" color="#0B3C5D">{links["apresentacao"]}</link>', st_link)],
     ]
@@ -207,8 +203,7 @@ def main() -> int:
     print(f"\nPDF gerado: {destino}")
     print("\nAntes de enviar, confirme em uma janela anônima:")
     print("  1. o repositório abre sem login;")
-    print("  2. o vídeo reproduz sem pedir permissão de acesso;")
-    print("  3. a apresentação abre e está em PDF.\n")
+    print("  2. a apresentação abre e está em PDF.\n")
     return 0
 
 

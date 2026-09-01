@@ -1,8 +1,8 @@
 # submissao/
 
-O PDF de submissão contém **apenas três links**: repositório, vídeo e apresentação.
-Ele não é gerado à mão — preencha o JSON e rode o script, para que todos os grupos
-entreguem exatamente o mesmo formato.
+O PDF de submissão reúne a identificação do grupo e os links da entrega. Ele não é
+gerado à mão: os dados são preenchidos no JSON e o script monta o documento, mantendo
+o formato padronizado.
 
 ## Passo a passo
 
@@ -22,8 +22,7 @@ estiver fora do formato `RM000000` ou se algum link não começar com `https://`
 | Link | Requisito |
 |---|---|
 | Repositório | público, para que qualquer pessoa com o link consiga acessar |
-| Vídeo | máximo 5 minutos, com ao menos um integrante narrando ou aparecendo. YouTube "não listado" ou Drive com acesso para qualquer pessoa com o link |
 | Apresentação | PDF. Pode apontar para o arquivo em `docs/` do próprio repositório |
 
-Teste os três em uma **janela anônima** antes de enviar. É o erro mais comum da entrega:
+Teste os dois em uma **janela anônima** antes de enviar. É o erro mais comum da entrega:
 o link funciona na máquina de quem criou e falha para quem abre depois.

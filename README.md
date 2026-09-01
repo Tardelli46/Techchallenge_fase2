@@ -310,7 +310,6 @@ reproduza integralmente os resultados apresentados na Seção 4.
 |---|---|
 | Repositório | https://github.com/Tardelli46/Techchallenge_fase2 |
 | Apresentação executiva | [`docs/apresentacao_executiva.pdf`](docs/apresentacao_executiva.pdf) |
-| Vídeo executivo (até 5 minutos) | *(a incluir)* |
 
 ### Tecnologias utilizadas
 
