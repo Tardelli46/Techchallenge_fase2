@@ -1,7 +1,7 @@
 # results/
 
-| Pasta | Conteúdo | Versionado? |
+| Pasta | Conteúdo |
 |---|---|---|
-| `figures/` | gráficos exportados (`.png`) | sim |
-| `metrics/` | tabelas comparativas (`.csv` / `.json`) | sim |
+| `figures/` | gráficos exportados (`.png`) |
+| `metrics/` | tabelas comparativas (`.csv` / `.json`) |
 
