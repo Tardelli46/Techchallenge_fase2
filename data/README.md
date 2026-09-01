@@ -8,8 +8,6 @@ datasets em Git incham o repositório e frequentemente violam a licença da font
 | `raw/` | arquivo original, exatamente como baixado da fonte — nunca editado |
 | `processed/` | saída dos notebooks de pré-processamento (`.parquet` ou `.csv`) |
 
-Documente abaixo como obter os dados brutos, para que qualquer pessoa consiga reproduzir o projeto.
-
 ## Como obter
 
 1. Baixe em: [Wine Quality Dataset — Kaggle](https://www.kaggle.com/datasets/yasserh/wine-quality-dataset)
