@@ -1,9 +1,5 @@
 # data/
 
-Os conjuntos de dados **não são versionados**: o `.gitignore` bloqueia o conteúdo destas
-pastas, mantendo no repositório apenas este arquivo e os marcadores `.gitkeep`. A opção
-evita inflar o repositório e respeita a licença da fonte original.
-
 | Pasta | Conteúdo |
 |---|---|
 | `raw/` | `WineQT.csv` — arquivo original, exatamente como obtido da fonte, sem qualquer edição |
@@ -15,16 +11,6 @@ evita inflar o repositório e respeita a licença da fonte original.
    — variante do Wine Quality Dataset publicado por Cortez *et al.* (2009), UCI Machine
    Learning Repository, restrita a vinhos tintos e acrescida da coluna `Id`.
 2. Salvar como `data/raw/WineQT.csv`.
-3. Conferir a integridade do arquivo (opcional):
-
-```powershell
-Get-FileHash data\raw\WineQT.csv -Algorithm SHA256    # Windows
-sha256sum data/raw/WineQT.csv                          # Linux
-shasum -a 256 data/raw/WineQT.csv                      # macOS
-```
-
-SHA-256 esperado:
-`7e38cc28812d08f521ee19e29e9d3622cde03464ff5e9a8b14aa991ec74ae49e`
 
 ## Descrição dos arquivos
 
