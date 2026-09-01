@@ -4,7 +4,7 @@ data/processed/*
 !data/**/.gitkeep
 !data/**/README.md
 
-# Modelos serializados — são regeneráveis rodando os notebooks
+# Modelos serializados - são regeneráveis rodando os notebooks
 *.pkl
 *.joblib
 
